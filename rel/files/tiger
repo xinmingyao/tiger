@@ -125,7 +125,7 @@ case "$1" in
             if [ "$?" -ne 0 ]; then
                 continue
             fi
-            NODEWATCHER=`$NODETOOL rpcterms erlang whereis "'riak_core_node_watcher'."`
+            NODEWATCHER=`$NODETOOL rpcterms erlang whereis "'zab_engine_sup'."`
             if [ "$NODEWATCHER" != "undefined" ]; then
                 exit 0
             fi
