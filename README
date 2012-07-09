@@ -10,3 +10,5 @@ make devrel
 ./start_cluster.sh
 
 	
+
+have test in centos and ubuntu
