@@ -1,4 +1,12 @@
 
 install:
 
-make devrel	
+install R15B
+
+make
+
+make devrel
+
+./start_cluster.sh
+
+	
