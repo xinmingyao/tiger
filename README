@@ -18,3 +18,7 @@ make devrel
 use memcached and redis client test get set delect api
 
 have test in centos and ubuntu
+
+test:
+
+  test.sh test
