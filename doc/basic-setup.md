@@ -65,31 +65,51 @@ behavior.
 tiger core
 --------
 master_nodes: list
+
   all nodes of the cluster.use 3 ,5,or7 nodes,the nodes should be connected.
+
    All nodes should have the same cluster name.
+
 tiger_kv
 ----------
-*memcached
-	enable:true or false
-	port:integer default 11211
-	ip:string default "127.0.0.1"
-	db_dir:  path for data storage
-        gc_by_zab_log_count:int default 1000(when update 1000 times,zab log vill gc,remove old log)
 
-*redis
+* memcached
+
 	enable:true or false
+	
 	port:integer default 11211
+	
 	ip:string default "127.0.0.1"
+	
+	db_dir:  path for data storage
+        
+	gc_by_zab_log_count:int default 1000(when update 1000 times,zab log vill gc,remove old log)
+
+* redis
+	
+	enable:true or false
+	
+	port:integer default 11211
+	
+	ip:string default "127.0.0.1"
+	
 	snapshot: use defual(the time for redis to dump to disk)
+	
 	gc:use default(after snapshot,gc the log)
+	
 	conf: use default(the redis storage engine start configue)
+	
 	db_dir:path for data storage
+
 zab_engine:
 -------------
+
 	proposal_log_dir:path for log
+
 lager:
 -------------
 	all use default
+
 saal
 -------------
 	all use default

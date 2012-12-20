@@ -2,12 +2,12 @@
 welcome to Tiger db
 =====
 -----
-Tiger db is a distributed,high avialable,high performance NoSQL data storage,
-	* strong consistency
-	* use redis or memcached protocol(only crud api)
-	* embeded leveldb as log engine
-	* embeded leveldb and redis as backend storage
-        * use zab protocol synchronize data between instance 
+Tiger db is a distributed,high avialable,high performance NoSQL data storage system,
+* strong consistency
+* use redis or memcached protocol(only crud api)
+* embeded leveldb as log engine
+* embeded leveldb and redis as backend storage
+* use zab protocol synchronize data between instance 
 wher to find more
 -----------
    *[architectrue](http://)
@@ -34,7 +34,7 @@ Configuration
 -----
 *vm.args
 *app.config
-*[basic setup](doc/basic-setup.md)
+*[basic setup](http://github.com/xinmingyao/tiger/blob/dev/doc/basic-setup.md)
 Server Control
 -----
 *bin/tiger --help
