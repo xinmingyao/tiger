@@ -112,11 +112,11 @@ case "$1" in
             "exec $RUNNER_SCRIPT_DIR/$SCRIPT console" 2>&1
 
         # Wait for the node to come up. We can't just ping it because
-        # distributed erlang comes up for a second before riak crashes
+        # distributed erlang comes up for a second before tiger crashes
         # (eg. in the case of an unwriteable disk). Once the node comes
         # up we check for the node watcher process. If that's running
         # then we assume things are good enough. This will at least let
-        # the user know when riak is crashing right after startup.
+        # the user know when tiger is crashing right after startup.
         WAIT=${WAIT_FOR_ERLANG:-15}
         while [ $WAIT -gt 0 ]; do
             WAIT=`expr $WAIT - 1`
@@ -130,8 +130,8 @@ case "$1" in
                 exit 0
             fi
         done
-        echo "Riak failed to start within ${WAIT_FOR_ERLANG:-15} seconds,"
-        echo "see the output of 'riak console' for more information."
+        echo "tiger failed to start within ${WAIT_FOR_ERLANG:-15} seconds,"
+        echo "see the output of 'tiger console' for more information."
         echo "If you want to wait longer, set the environment variable"
         echo "WAIT_FOR_ERLANG to the number of seconds to wait."
         exit 1

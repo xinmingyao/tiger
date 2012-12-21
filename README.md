@@ -12,7 +12,7 @@ Tiger db is a distributed,high avialable,high performance NoSQL data storage sys
 wher to find more
 -----------
 
-   *[architectrue](http://)
+* [architectrue](http://)
 Quick Start
 ----------
 
@@ -38,14 +38,14 @@ Server Management
 Configuration
 -------
 
-*vm.args
-*app.config
-*[basic setup](http://github.com/xinmingyao/tiger/blob/dev/doc/basic-setup.md)
+* vm.args
+* app.config
+* [basic setup](http://github.com/xinmingyao/tiger/blob/dev/doc/basic-setup.md)
 
 Server Control
 -----
 
-*bin/tiger --help
+* bin/tiger --help
 
 test:
 -------

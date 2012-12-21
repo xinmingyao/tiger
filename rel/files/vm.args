@@ -1,4 +1,4 @@
-## Name of the riak node
+## Name of the tiger node
 -name {{node}}
 
 ## Cookie for distributed erlang.  All nodes in the same cluster
